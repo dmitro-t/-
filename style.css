@@ -1,0 +1,87 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap'); */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    background-color: rgb(248, 255, 255); 
+    border: 4px solid gainsboro;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    width: 400px;
+}
+
+.form h2{
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.form{
+    padding: 30px;
+}
+
+.form-control{
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.form-control.correct input{
+    border-color: green;
+}
+
+.form-control.error input{
+    border-color: red;
+}
+
+.form-control.error small{
+    visibility: visible;
+}
+
+.form-control label{
+    display: block;
+    margin-bottom: 5px;
+
+}
+
+small{
+    position: absolute;
+    color: red;
+    display: block;
+    visibility: hidden;
+}
+
+input{
+    outline: 0;
+    border: 2px solid beige;
+    width: 100%;
+    padding: 10px;
+}
+
+input:focus{
+    border-color: rgb(174, 170, 170);
+}
+
+button{
+    font-size: medium;
+    background-color: cornflowerblue;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid cornflowerblue;
+    border-radius: 4px;
+    box-shadow: 2px rgb(80, 80, 255);
+}
+
+button:active {
+    border-color: rgb(80, 80, 255);
+    border-radius: 8px;
+    box-shadow: inset;
+}
